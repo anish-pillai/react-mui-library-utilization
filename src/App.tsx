@@ -1,24 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import MuiBottomNavigation from "./components/navigation-components/MuiBottomNavigation";
+
+// import MuiSpeedDial from './components/MuiSpeedDial';
+
+// import MuiBreadcrumbs from './components/MuiBreadcrumbs';
+// import MuiDrawer from './components/MuiDrawer';
+// import MuiLink from './components/MuiLink';
+// import MuiNavbar from './components/MuiNavbar';
+
+// import MuiImageList from './components/MuiImageList';
+
+// import MuiAccordion from './components/MuiAccordion';
+
+// import MuiCard from "./components/MuiCard";
+
+// import MuiAutocomplete from './components/MuiAutocomplete';
+// import MuiLayout from './components/MuiLayout';
+
+// import MuiRating from './components/MuiRating';
+
+// import MuiCheckbox from './components/MuiCheckbox';
+// import MuiSwitch from './components/MuiSwitch';
+
+// import MuiRadioButton from './components/MuiRadioButton';
+
+// import MuiSelect from './components/MuiSelect';
+
+// import MuiButton from './components/MuiButton';
+// import MuiTextField from './components/MuiTextField';
+
+// import MuiTypography from './components/MuiTypography';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MuiBottomNavigation />
+      {/* <MuiSpeedDial />
+      <MuiNavbar />
+      <MuiBreadcrumbs />
+      <MuiDrawer />
+       <MuiLink />
+      <MuiImageList />
+      <MuiAccordion />
+      <MuiCard />
+      <MuiLayout />
+      <MuiAutocomplete />
+      <MuiRating />
+      <MuiSwitch />
+      <MuiCheckbox />
+      <MuiRadioButton />
+      <MuiSelect />
+      <MuiTextField />
+      <MuiButton />
+      <MuiTypography /> */}
     </div>
   );
 }
