@@ -1,0 +1,34 @@
+import { Box, styled } from "@mui/material";
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  height: "250px",
+  width: "250px",
+  backgroundColor: theme.palette.neutral?.darker,
+  //   backgroundColor: theme.palette.neutral?.main,
+  //   backgroundColor: theme.status.danger,
+}));
+
+const MuiResponsiveness = () => {
+  return (
+    <>
+      <Box
+        sx={{
+          height: "300px",
+          // width: '300px',
+          width: {
+            //Box    Screen
+            xs: 100, //0
+            sm: 200, //600
+            md: 300, //900
+            lg: 400, //1200
+            xl: 500, //1536
+          },
+          bgcolor: "secondary.main",
+        }}
+      ></Box>
+      <StyledBox />
+    </>
+  );
+};
+
+export default MuiResponsiveness;
