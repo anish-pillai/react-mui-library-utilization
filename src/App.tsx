@@ -1,11 +1,17 @@
 import "./App.css";
 
-import MuiAvatar from "./components/data-display-components/MuiAvatar";
-import MuiBadge from "./components/data-display-components/MuiBadge";
-import MuiChip from "./components/data-display-components/MuiChip";
-import MuiList from "./components/data-display-components/MuiList";
-import MuiTable from "./components/data-display-components/MuiTable";
-import MuiTooltip from "./components/data-display-components/MuiTooltip";
+import MuiAlert from "./components/feedback-components/MuiAlert";
+import MuiDialog from "./components/feedback-components/MuiDialog";
+import MuiProgress from "./components/feedback-components/MuiProgress";
+import MuiSkeleton from "./components/feedback-components/MuiSkeleton";
+import MuiSnackbar from "./components/feedback-components/MuiSnackbar";
+
+// import MuiAvatar from "./components/data-display-components/MuiAvatar";
+// import MuiBadge from "./components/data-display-components/MuiBadge";
+// import MuiChip from "./components/data-display-components/MuiChip";
+// import MuiList from "./components/data-display-components/MuiList";
+// import MuiTable from "./components/data-display-components/MuiTable";
+// import MuiTooltip from "./components/data-display-components/MuiTooltip";
 
 // import MuiBottomNavigation from "./components/navigation-components/MuiBottomNavigation";
 
@@ -62,12 +68,18 @@ function App() {
       <MuiButton />
       <MuiTypography /> */}
       {/* Data Display Components */}
-      <MuiAvatar />
+      {/* <MuiAvatar />
       <MuiBadge />
       <MuiList />
       <MuiChip />
       <MuiTooltip />
-      <MuiTable />
+      <MuiTable /> */}
+      {/* Feedback components */}
+      <MuiSkeleton />
+      <MuiProgress />
+      <MuiDialog />
+      <MuiSnackbar />
+      <MuiAlert />
     </div>
   );
 }
