@@ -1,6 +1,13 @@
 import "./App.css";
 
-import MuiBottomNavigation from "./components/navigation-components/MuiBottomNavigation";
+import MuiAvatar from "./components/data-display-components/MuiAvatar";
+import MuiBadge from "./components/data-display-components/MuiBadge";
+import MuiChip from "./components/data-display-components/MuiChip";
+import MuiList from "./components/data-display-components/MuiList";
+import MuiTable from "./components/data-display-components/MuiTable";
+import MuiTooltip from "./components/data-display-components/MuiTooltip";
+
+// import MuiBottomNavigation from "./components/navigation-components/MuiBottomNavigation";
 
 // import MuiSpeedDial from './components/MuiSpeedDial';
 
@@ -35,8 +42,8 @@ import MuiBottomNavigation from "./components/navigation-components/MuiBottomNav
 function App() {
   return (
     <div className="App">
-      <MuiBottomNavigation />
-      {/* <MuiSpeedDial />
+      {/* <MuiBottomNavigation />
+      <MuiSpeedDial />
       <MuiNavbar />
       <MuiBreadcrumbs />
       <MuiDrawer />
@@ -54,6 +61,13 @@ function App() {
       <MuiTextField />
       <MuiButton />
       <MuiTypography /> */}
+      {/* Data Display Components */}
+      <MuiAvatar />
+      <MuiBadge />
+      <MuiList />
+      <MuiChip />
+      <MuiTooltip />
+      <MuiTable />
     </div>
   );
 }
