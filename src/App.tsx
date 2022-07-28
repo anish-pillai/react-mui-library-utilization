@@ -1,10 +1,20 @@
 import "./App.css";
 
-import MuiAlert from "./components/feedback-components/MuiAlert";
-import MuiDialog from "./components/feedback-components/MuiDialog";
-import MuiProgress from "./components/feedback-components/MuiProgress";
-import MuiSkeleton from "./components/feedback-components/MuiSkeleton";
-import MuiSnackbar from "./components/feedback-components/MuiSnackbar";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+
+import MuiDateRangePicker from "./components/lab-components/MuiDateRangePicker";
+import MuiDateTimePicker from "./components/lab-components/MuiDateTimePicker";
+import MuiMasonry from "./components/lab-components/MuiMasonry";
+import MuiTabs from "./components/lab-components/MuiTabs";
+
+// import MuiLoadingButton from './components/lab-components/MuiLoadingButton';
+
+// import MuiAlert from "./components/feedback-components/MuiAlert";
+// import MuiDialog from "./components/feedback-components/MuiDialog";
+// import MuiProgress from "./components/feedback-components/MuiProgress";
+// import MuiSkeleton from "./components/feedback-components/MuiSkeleton";
+// import MuiSnackbar from "./components/feedback-components/MuiSnackbar";
 
 // import MuiAvatar from "./components/data-display-components/MuiAvatar";
 // import MuiBadge from "./components/data-display-components/MuiBadge";
@@ -47,40 +57,48 @@ import MuiSnackbar from "./components/feedback-components/MuiSnackbar";
 
 function App() {
   return (
-    <div className="App">
-      {/* <MuiBottomNavigation />
-      <MuiSpeedDial />
-      <MuiNavbar />
-      <MuiBreadcrumbs />
-      <MuiDrawer />
-       <MuiLink />
-      <MuiImageList />
-      <MuiAccordion />
-      <MuiCard />
-      <MuiLayout />
-      <MuiAutocomplete />
-      <MuiRating />
-      <MuiSwitch />
-      <MuiCheckbox />
-      <MuiRadioButton />
-      <MuiSelect />
-      <MuiTextField />
-      <MuiButton />
-      <MuiTypography /> */}
-      {/* Data Display Components */}
-      {/* <MuiAvatar />
-      <MuiBadge />
-      <MuiList />
-      <MuiChip />
-      <MuiTooltip />
-      <MuiTable /> */}
-      {/* Feedback components */}
-      <MuiSkeleton />
-      <MuiProgress />
-      <MuiDialog />
-      <MuiSnackbar />
-      <MuiAlert />
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div className="App">
+        {/* <MuiBottomNavigation />
+        <MuiSpeedDial />
+        <MuiNavbar />
+        <MuiBreadcrumbs />
+        <MuiDrawer />
+        <MuiLink />
+        <MuiImageList />
+        <MuiAccordion />
+        <MuiCard />
+        <MuiLayout />
+        <MuiAutocomplete />
+        <MuiRating />
+        <MuiSwitch />
+        <MuiCheckbox />
+        <MuiRadioButton />
+        <MuiSelect />
+        <MuiTextField />
+        <MuiButton />
+        <MuiTypography /> */}
+        {/* Data Display Components */}
+        {/* <MuiAvatar />
+        <MuiBadge />
+        <MuiList />
+        <MuiChip />
+        <MuiTooltip />
+        <MuiTable /> */}
+        {/* Feedback components */}
+        {/* <MuiSkeleton />
+        <MuiProgress />
+        <MuiDialog />
+        <MuiSnackbar />
+        <MuiAlert /> */}
+        {/* Lab Components */}
+        {/* <MuiLoadingButton /> */}
+        <MuiMasonry />
+        {/*<MuiTabs />
+         <MuiDateRangePicker />
+        <MuiDateTimePicker /> */}
+      </div>
+    </LocalizationProvider>
   );
 }
 
